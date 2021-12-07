@@ -1,0 +1,53 @@
+@import "../base/variables";
+
+.bg-PC{
+    background-color: $darkest-color;
+}
+.logoMiniPC{
+    width: 4rem;
+}
+.buttonPC{
+    color: $light-color !important;
+}
+.aNavPC {
+    color: $light-color!important;
+}
+.navHeaderPC{
+    margin-top: 2rem;
+    background-color: $darkest-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.listaNavPC{
+    margin: auto;
+    text-align: center;
+    text-decoration-line: none;
+    display: flex;
+    list-style: none;
+    li{
+        a{
+            font-family: $secondary-font;
+            font-size: 2.2rem;
+            font-weight: bolder;
+            letter-spacing: 20%;
+            color: $light-color;
+            text-align: center;
+            text-decoration-line: none;
+            display: block;
+            margin: 2rem;
+            padding: 1rem;
+            text-transform: uppercase;
+            :hover{
+                color: $lightest-color;
+            }
+        }
+    }
+}
+.listaNavPC li:hover ul{
+    display: block;
+}
+.listaNavPC :hover{
+    background-color: $dark-color;
+    text-decoration-color: $lightest-color;
+}

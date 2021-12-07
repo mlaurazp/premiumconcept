@@ -1,0 +1,30 @@
+@import "../base/variables";
+@import "../base/mapas";
+
+
+.h1PC{
+    font-family: $principal-font;
+    font-size: map-get($titulos, font-size);
+    color: $lightest-color;
+    text-align: map-get($titulos, text-align);
+    font-weight: lighter;
+    text-transform: initial;
+    line-height: 1rem;
+    letter-spacing:map-get($titulos, letter-spacing);
+    padding: 5rem;
+}
+.h2PC{
+    font-family: $third-font;
+    font-size: 3rem;
+    color: $lightest-color;
+    text-align: map-get($titulos, text-align);
+    font-weight: lighter;
+    padding: 2rem;
+}
+.h3PC{
+    font-family: $secondary-font;
+    color: $lightest-color;
+    font-size: 2.5rem;
+    text-align: left;
+    text-decoration-line: none;
+}

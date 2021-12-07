@@ -1,0 +1,16 @@
+@import "../base/variables";
+
+.datosMapascontactoPC{
+    margin-top: 5%;
+    font-family: $secondary-font;
+    font-size: 20px;
+    list-style: none;      
+    text-align: center;
+    color: $lightest-color; 
+}
+
+.mapContactoPC{
+    width: 100%;
+    align-items: center;
+    height: 35em;
+}

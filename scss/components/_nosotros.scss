@@ -1,0 +1,24 @@
+@import "../base/variables";
+
+.mainNosotrosPC{
+    background-color: $lightest-color;
+    align-items: center;
+}
+
+.paragraphNosotrosPC{
+    text-align: center;
+    font-size: 20px;
+    font-family: $secondary-font;
+    background-color: $lightest-color;
+    color:$dark-color;
+    padding: 5rem;
+}
+.imgNosotros{
+    width: 100%;
+}
+
+.logoMiniPC{
+    margin: auto 0;
+    width: 20rem;
+    padding: 2rem;
+}

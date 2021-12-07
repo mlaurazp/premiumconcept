@@ -1,0 +1,4 @@
+@mixin tamaño-pc ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

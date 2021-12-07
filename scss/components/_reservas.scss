@@ -1,0 +1,33 @@
+@import "../base/variables";
+
+.formRegistrerPC{
+    background-color: $darkest-color;
+    width: 70rem;
+    padding: 4rem;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.controlsPC{
+   background-color: $lightest-color;
+    width: 50rem;
+    padding: 1rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(6, 1fr); 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; 
+}
+
+.btn-colorPC{
+    margin: 3rem !important;
+    font-family: $secondary-font;
+    font-size: 2rem !important;
+    background-color: $dark-color !important;
+    text-decoration: $light-color;
+    border-color: $dark-color !important;
+}

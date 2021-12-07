@@ -1,0 +1,15 @@
+@import "../base/variables";
+
+.imgMenuPC{
+    width: 142rem;
+}
+
+.menuListPC{
+   list-style: none;
+   text-decoration-line: none;
+   color: $lightest-color;
+   text-align: center;
+   font-size: 20px;
+   font-family: $secondary-font;
+   padding: 1rem;
+}

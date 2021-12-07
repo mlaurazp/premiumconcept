@@ -1,0 +1,453 @@
+.centralIndex1PC, .centralIndex2PC, .centralIndex3PC, .centralIndex4PC {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+
+@media only screen and (max-width: 480px) {
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; }
+  .imageCarrouselPC {
+    width: 65rem; }
+  .h1PC {
+    font-size: 2rem; }
+  .ImageMenuPC {
+    width: 30rem; }
+  .paragraphPC {
+    width: 30rem; }
+  .boxcentralIndex1PC {
+    width: 20rem; }
+  .containerMainPC {
+    width: 30rem; }
+  .paragraphMainPC {
+    width: 30rem; }
+  .footerPC {
+    width: 20rem; }
+  .imageFooterPC {
+    width: 20rem; }
+  .imageMenuPC {
+    width: 30rem; } }
+
+@media only screen and (min-width: 280px) and (max-width: 359px) {
+  .mapPC {
+    width: 250px;
+    height: 350px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+  .mapPC {
+    width: 290px;
+    height: 380px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+  .mapPC {
+    width: 330px;
+    height: 380px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 375px) and (max-width: 410px) {
+  .mapPC {
+    width: 345px;
+    height: 400px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 411px) and (max-width: 424px) {
+  .mapPC {
+    width: 385px;
+    height: 400px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 425px) and (max-width: 539px) {
+  .mapPC {
+    width: 385px;
+    height: 380px; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 481px) and (max-width: 978px) {
+  .boxReservePC {
+    display: none; }
+  .logoPrincipalPC {
+    margin-left: auto;
+    width: 10rem; }
+  .aNavPC {
+    font-size: 5px; }
+  .navHeaderPC {
+    background-color: #114c58;
+    justify-content: center; }
+  .listaNavPC {
+    flex-direction: column; } }
+
+.datosMapascontactoPC {
+  margin-top: 5%;
+  font-family: "Palanquin", sans-serif;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  color: #f9f9f3; }
+
+.mapContactoPC {
+  width: 100%;
+  align-items: center;
+  height: 35em; }
+
+.footerPC {
+  background-color: #114c58;
+  display: flex;
+  flex-wrap: wrap; }
+
+.redesPC {
+  display: flex;
+  list-style: none;
+  margin-top: 2rem; }
+  .redesPC li {
+    margin-top: 2%;
+    margin-left: 1%; }
+
+.bg-PC {
+  background-color: #022c33; }
+
+.logoMiniPC {
+  width: 4rem; }
+
+.buttonPC {
+  color: #93babf !important; }
+
+.aNavPC {
+  color: #93babf !important; }
+
+.navHeaderPC {
+  margin-top: 2rem;
+  background-color: #022c33;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.listaNavPC {
+  margin: auto;
+  text-align: center;
+  text-decoration-line: none;
+  display: flex;
+  list-style: none; }
+  .listaNavPC li a {
+    font-family: "Palanquin", sans-serif;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    letter-spacing: 20%;
+    color: #93babf;
+    text-align: center;
+    text-decoration-line: none;
+    display: block;
+    margin: 2rem;
+    padding: 1rem;
+    text-transform: uppercase; }
+    .listaNavPC li a :hover {
+      color: #f9f9f3; }
+
+.listaNavPC li:hover ul {
+  display: block; }
+
+.listaNavPC :hover {
+  background-color: #114c58;
+  text-decoration-color: #f9f9f3; }
+
+.centralIndex1PC, .centralIndex2PC, .centralIndex3PC, .centralIndex4PC {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
+
+.containerMainPc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: auto 0;
+  transition: ease;
+  transition: all 1.5s;
+  width: 100%; }
+
+.imageCarrouselPC {
+  width: 100%; }
+
+.imageMenuPC {
+  width: 100%; }
+
+.boxImgCentralIndex1PC {
+  margin-top: 3rem;
+  width: 50rem; }
+
+.boxParagraphCentralIndex1PC {
+  margin-top: 2rem; }
+
+.boxImgCentralIndex2PC {
+  width: 50rem; }
+
+.boxImgCentralIndex3PC {
+  margin-top: 3rem;
+  width: 50rem; }
+
+.boxParagraphCentralIndex3PC {
+  margin-top: 2.5rem; }
+
+.boxImgCentralIndex4PC {
+  width: 50rem; }
+
+.phportadaPC {
+  width: 100%;
+  margin: 0 auto; }
+
+.paragraphPC {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-size: 2rem;
+  font-family: "Palanquin", sans-serif;
+  background-color: #114c58;
+  color: #f9f9f3; }
+
+.paragraphMainPC {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  text-align: justify;
+  font-size: 2rem;
+  font-family: "Palanquin", sans-serif;
+  background-color: #114c58;
+  color: #f9f9f3;
+  width: 100%; }
+
+.imageMenuPC {
+  width: 100%;
+  margin-left: 5%; }
+
+.imageFooterPC {
+  width: 60rem;
+  display: inline-block; }
+
+.blockImageFooterPC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10%;
+  transition: all 1.5s; }
+
+.blockFooterMapReservePC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 0;
+  width: 100%; }
+
+.mapPC {
+  box-align: left;
+  width: 60rem;
+  margin-top: 2rem;
+  margin-left: 7rem; }
+
+.boxReservePC {
+  box-align: left;
+  width: 60rem;
+  margin-top: 2rem;
+  margin-left: 5rem; }
+  .boxReservePC img {
+    width: 53rem;
+    height: 50rem; }
+
+.datosMapsPC {
+  font-family: "Palanquin", sans-serif;
+  font-size: 20px;
+  list-style: none;
+  text-align: left;
+  color: #f9f9f3;
+  margin-left: 8rem; }
+
+.footerPC {
+  display: flex;
+  flex-wrap: wrap; }
+
+.h1PC {
+  font-family: "Taviraj", serif;
+  font-size: 4rem;
+  color: #f9f9f3;
+  text-align: center;
+  font-weight: lighter;
+  text-transform: initial;
+  line-height: 1rem;
+  letter-spacing: 0.5rem;
+  padding: 5rem; }
+
+.h2PC {
+  font-family: "Noto Serif Display", serif;
+  font-size: 3rem;
+  color: #f9f9f3;
+  text-align: center;
+  font-weight: lighter;
+  padding: 2rem; }
+
+.h3PC {
+  font-family: "Palanquin", sans-serif;
+  color: #f9f9f3;
+  font-size: 2.5rem;
+  text-align: left;
+  text-decoration-line: none; }
+
+.imgMenuPC {
+  width: 142rem; }
+
+.menuListPC {
+  list-style: none;
+  text-decoration-line: none;
+  color: #f9f9f3;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Palanquin", sans-serif;
+  padding: 1rem; }
+
+.mainNosotrosPC {
+  background-color: #f9f9f3;
+  align-items: center; }
+
+.paragraphNosotrosPC {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Palanquin", sans-serif;
+  background-color: #f9f9f3;
+  color: #114c58;
+  padding: 5rem; }
+
+.imgNosotros {
+  width: 100%; }
+
+.logoMiniPC {
+  margin: auto 0;
+  width: 20rem;
+  padding: 2rem; }
+
+.imageNuestroespacioPC {
+  width: 50rem; }
+
+.nuestroEspacioPC {
+  margin: 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.imageNuestroespacioPC {
+  padding: 2rem; }
+
+.mainProductosPC {
+  font-family: 'Palanquin', sans-serif;
+  font-size: 20px;
+  color: #f9f9f3;
+  text-align: center;
+  font-weight: bold;
+  align-items: center; }
+
+.mainProductosPC img {
+  width: 40%; }
+
+.formRegistrerPC {
+  background-color: #022c33;
+  width: 70rem;
+  padding: 4rem;
+  margin: auto;
+  margin-top: 4rem; }
+
+.controlsPC {
+  background-color: #f9f9f3;
+  width: 50rem;
+  padding: 1rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  font-family: "Palanquin", sans-serif;
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+
+.btn-colorPC {
+  margin: 3rem !important;
+  font-family: "Palanquin", sans-serif;
+  font-size: 2rem !important;
+  background-color: #114c58 !important;
+  text-decoration: #93babf;
+  border-color: #114c58 !important; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%;
+  /*1rem = 10px*/ }
+
+.bodyPC {
+  background-color: #114c58; }

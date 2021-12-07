@@ -1,0 +1,128 @@
+@import "../base/variables";
+@import "../base/extends";
+
+.containerMainPc{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto 0;
+    transition: ease;
+    transition: all 1.5s;
+    width: 100%;
+}
+.imageCarrouselPC{
+    width: 100%;
+}
+.imageMenuPC{
+   width:100%
+}
+.centralIndex1PC{
+    @extend %cajaCentralIndex;
+}
+.boxImgCentralIndex1PC{
+    margin-top: 3rem;
+    width: 50rem;
+}
+.boxParagraphCentralIndex1PC{
+    margin-top: 2rem;
+}
+.centralIndex2PC{
+    @extend %cajaCentralIndex;
+}
+.boxImgCentralIndex2PC{
+    width: 50rem;
+}
+.centralIndex3PC{
+    @extend %cajaCentralIndex;
+}
+.boxImgCentralIndex3PC{
+    margin-top: 3rem;
+    width: 50rem;
+}
+.boxParagraphCentralIndex3PC{
+    margin-top: 2.5rem;
+}
+.centralIndex4PC{
+    @extend %cajaCentralIndex;
+}
+.boxImgCentralIndex4PC{
+    width: 50rem;
+}
+.phportadaPC{
+    width: 100%;
+    margin: 0 auto;
+}
+.paragraphPC{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: $secondary-font;
+    background-color: $dark-color;
+    color: $lightest-color
+}
+.paragraphMainPC{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: $secondary-font;
+    background-color: $dark-color;
+    color: $lightest-color;
+    width: 100%;
+}
+.imageMenuPC{
+    width: 100%;
+    margin-left: 5%;
+}
+.imageFooterPC{
+    width: 60rem;
+    display: inline-block;
+}
+.blockImageFooterPC{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+    transition: all 1.5s;
+}
+.blockFooterMapReservePC{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto 0;
+    width: 100%;
+}
+.mapPC {
+    box-align: left;
+    width: 60rem;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+.boxReservePC{
+    box-align: left;
+    width: 60rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    img{
+        width: 53rem;
+        height: 50rem;
+    }
+}
+
+.datosMapsPC{
+    font-family: $secondary-font;
+    font-size: 20px;
+    list-style: none;      
+    text-align: left;
+    color: $lightest-color;
+    margin-left: 8rem;
+}
+.footerPC{
+   display: flex;
+   flex-wrap: wrap;
+}
+
