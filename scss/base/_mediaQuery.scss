@@ -1,193 +1,45 @@
 @import "../base/variables";
 @import "../base/mixins";
 
-@media only screen and (max-width:480px){
 
+@media only screen and (min-width:280px) and (max-width:480px){
     .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
+        width: 50%;
     }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
-    .imageCarrouselPC{
-      width: 65rem;
-    }
-    .h1PC{
-        font-size: 2rem;
-    }
-    .ImageMenuPC{
-        width: 30rem;
-    } 
-    .paragraphPC{
-        width: 30rem;
-    }
-    .boxcentralIndex1PC{
-        width: 20rem;
-    }
-    .containerMainPC{
-        width: 30rem;
-    }
-    .paragraphMainPC{
-        width: 30rem;;
-    }
-    .footerPC{
-        width: 20rem;
-    }
-    .imageFooterPC{
-        width: 20rem;
-    }
-    .imageMenuPC{
-        width: 30rem;
-    }
+   .containerMainPC{
+       width: 100%;
+   }
+   .centralIndex{
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .h1PC{
+       font-size: 2rem !important;
+   }
   
-}
-@media only screen and (min-width: 280px) and (max-width:359px){
-   .mapPC{
-       @include tamaño-pc(250px, 350px)
+   .listaNavPC{
+        flex-direction: column;
+        li{
+            a{
+                font-size: 1.8rem !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                letter-spacing: 10% !important;
+            }
         }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
+       
     }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }    
-  
-}
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-    .mapPC {
-        @include tamaño-pc(290px, 380px)    
-        }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    } 
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }       
-     
-}
-@media only screen and (min-width: 360px) and (max-width: 374px) {
-    .mapPC {
-        @include tamaño-pc(330px, 380px)
-        }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
-   
-}
-@media only screen and (min-width: 375px) and (max-width: 410px) {
-    .mapPC {
-        @include tamaño-pc(345px, 400px)
-   
-    }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
-
-}
-
-@media only screen and (min-width: 411px) and (max-width: 424px) {
-    .mapPC {
-        @include tamaño-pc(385px, 400px)
-    
-    }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
-}
-@media only screen and (min-width: 425px) and (max-width: 539px) {
-    .mapPC {
-        @include tamaño-pc(385px, 380px)
-    }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
-}
-
-
-@media only screen and (min-width:481px) and (max-width:978px){
     .boxReservePC{
         display: none;
     }
-    .logoPrincipalPC{
-        margin-left: auto;
-        width: 10rem;
-    }
-    .aNavPC{
-        font-size: 5px;
-    }
-    .navHeaderPC{
-        background-color: $dark-color;
-        justify-content: center;
-    }
-    .listaNavPC{
-        flex-direction: column;
-    }
+
 }
+.imageNuestroespacioPC{
+    width: 40rem !important;
+   margin: auto;
+}
+.mainBoxNuestroEspacioPC{
+    justify-items: center;
+    
+}
+
