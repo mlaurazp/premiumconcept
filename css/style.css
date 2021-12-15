@@ -22,14 +22,16 @@
       margin: 0 !important;
       letter-spacing: 10% !important; }
   .boxReservePC {
-    display: none; } }
-
-.imageNuestroespacioPC {
-  width: 40rem !important;
-  margin: auto; }
-
-.mainBoxNuestroEspacioPC {
-  justify-items: center; }
+    display: none; }
+  .imageNuestroespacioPC {
+    width: 40rem !important;
+    margin: auto; }
+  .mainBoxNuestroEspacioPC {
+    justify-items: center; }
+  .mapPC {
+    width: 300px; }
+  .datosMapPC {
+    font-size: 1rem; } }
 
 .datosMapascontactoPC {
   margin-top: 5%;
