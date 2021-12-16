@@ -29,7 +29,9 @@
     width: 40rem !important;
     margin: auto; }
   .mainBoxNuestroEspacioPC {
-    justify-items: center; } }
+    justify-items: center; }
+  .boxMapPC {
+    display: none; } }
 
 .datosMapascontactoPC {
   margin-top: 5%;
