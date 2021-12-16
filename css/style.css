@@ -29,7 +29,11 @@
     width: 40rem !important;
     margin: auto; }
   .mainBoxNuestroEspacioPC {
-    justify-items: center; } }
+    justify-items: center; }
+  .blockFooterImageReservePC {
+    display: none; }
+  .imageLocation {
+    display: none; } }
 
 .datosMapascontactoPC {
   margin-top: 5%;
@@ -157,20 +161,23 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10%;
-  transition: all 1.5s; }
+  transition: all 1.5s;
+  margin-bottom: 2rem; }
 
-.blockFooterMapReservePC {
+.blockFooterImageReservePC {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto 0;
   width: 100%; }
 
-.mapPC {
+.ImageLocation {
   box-align: left;
   width: 60rem;
   margin-top: 2rem;
   margin-left: 7rem; }
+  .ImageLocation .boxLocationPC {
+    margin-top: 2rem; }
 
 .boxReservePC {
   box-align: left;

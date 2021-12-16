@@ -58,19 +58,23 @@
     justify-content: center;
     margin-top: 10%;
     transition: all 1.5s;
+    margin-bottom: 2rem;
 }
-.blockFooterMapReservePC{
+.blockFooterImageReservePC{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto 0;
     width: 100%;
 }
-.mapPC {
+.ImageLocation {
     box-align: left;
     width: 60rem;
     margin-top: 2rem;
     margin-left: 7rem;
+    .boxLocationPC{
+        margin-top: 2rem;
+    }
 }
 .boxReservePC{
     box-align: left;
