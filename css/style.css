@@ -184,7 +184,7 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-  text-align: justify;
+  text-align: justify !important;
   font-size: 2rem;
   font-family: "Palanquin", sans-serif;
   background-color: #114c58;
