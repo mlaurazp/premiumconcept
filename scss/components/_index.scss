@@ -60,45 +60,24 @@
     transition: all 1.5s;
     margin-bottom: 2rem;
 }
-.blockFooterImageReservePC{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto 0;
-    width: 100%;
-}
-.ImageLocation {
-    box-align: left;
-    width: 60rem;
-    margin-top: 2rem;
-    margin-left: 7rem;
-    .boxLocationPC{
-        margin-top: 2rem;
-    }
-}
+
+
 .boxReservePC{
-    box-align: left;
+    justify-content: center;
     width: 60rem;
-    margin-top: 2rem;
-    margin-left: 5rem;
+    margin: auto;
     img{
         width: 53rem;
         height: 50rem;
     }
 }
 
-.datosMapsPC{
-    font-family: $secondary-font;
-    font-size: 20px;
-    list-style: none;      
-    text-align: left;
-    color: $lightest-color;
-    margin-left: 8rem;
-}
 .footerPC{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap !important;
 }
+
+
 
 
 
