@@ -63,17 +63,31 @@
         <section>
             <h1 class="h1PC d-none">Reservas</h1>
         </section>
-
-        <section class="formRegistrerPC">
+       
+        <div id="contFormulario">
             <h2 class="h2PC">Formulario de Reserva</h2>
-            <input class="controlsPC" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre"> 
-            <input class="controlsPC" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido"> 
-            <input class="controlsPC" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono"> 
-            <input class="controlsPC" type="text" name="mail" id="mail" placeholder="Ingrese su mail"> 
-            <input class="controlsPC" type="text" name="reserva" id="reserva" placeholder="Ingrese fecha y hora reserva"> 
-            <input class="controlsPC" type="text" name="cantidad" id="cantidad" placeholder="Ingrese cantidad de comensales"> 
-            <button type="aceptar" class="btn-colorPC btn btn-primary">Aceptar</button> 
-        </section>
+      
+            <form id="formulario" class="formRegistrerPC">
+                <input class="controlsPC" type="text" name="userNnombre" id="userNombre" placeholder="Ingrese su nombre" required> 
+                <p class="text-danger mb-2 d-none" id="alertNombre"></p>
+                <input class="controlsPC" type="text" name="userApellido" id="userApellido" placeholder="Ingrese su apellido" required> 
+                <p class="text-danger mb-2 d-none" id="alertApellido"></p>
+                <input class="controlsPC" type="text" name="userTelefono" id="userTelefono" placeholder="Ingrese su telefono" required> 
+                <p class="text-danger mb-2 d-none" id="alertTelefono"></p>
+                <input class="controlsPC" type="email" name="userMail" id="userMail" placeholder="Ingrese su mail" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required> 
+                <p class="text-danger mb-2 d-none" id="alertMail"></p>
+                <input class="controlsPC" type="date" name="userReserva" id="userReserva" placeholder="Ingrese fecha y hora reserva" required>
+                <p class="text-danger mb-2 d-none" id="alertReserva"></p> 
+                <input class="controlsPC" type="number" name="userCantidad" id="userCantidad" placeholder="Ingrese cantidad de comensales" required> 
+                <p class="text-danger mb-2 d-none" id="alertCantidad"></p>
+                <button type="submit" class="btn-colorPC btn btn-primary">Enviar</button> 
+            </form> 
+           
+            <div class="alert alert-succes my-2 d-none text-center text-light messageAlertPC" id="alertSucces">
+                Mensaje enviado correctamente
+            </div>
+        </div>
+
         <section>
             <ul class="datosMapascontactoPC">
                 <li>Dirección: Calle Larios 150</li>
@@ -96,7 +110,8 @@
         </nav>
     </footer>  
     <!-- Fin Pie de Página-->
-    
+      <!--JS-->
+      <script src="../js/reservas.js"></script>
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>

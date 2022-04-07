@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
-  })
+    if (localStorage.getItem('carrito')){
+        carrito = JSON.parse(localStorage.getItem('carrito'))
+        pintarCarrito();
+    }
+  });
   
   const fetchData = async () => {
     try {
@@ -41,9 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const producto = data.find(item => item.id === parseInt(btn.dataset.id))
             producto.cantidad = 1
             if (carrito.hasOwnProperty(producto.id)) {
-                producto.cantidad = carrito[producto.id].cantidad + 1
+                producto.cantidad = carrito[producto.id].cantidad + 1   
             } 
             carrito[producto.id] = {...producto}
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Se ha agregado al carrito',
+                showConfirmButton: false,
+                timer: 1500
+               })
             pintarCarrito()
         })
     })
@@ -78,6 +89,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     pintarFooter()
     accionBotones()
+
+    localStorage.setItem('carrito', JSON.stringify(carrito))
   
   }
   
@@ -113,8 +126,51 @@ document.addEventListener("DOMContentLoaded", () => {
     boton.addEventListener('click', () => {
         carrito = {}
         pintarCarrito()
+    
     })
-  
+    const finalizarCompra = document.querySelector('#finalizar-compra')
+  finalizarCompra.addEventListener('click', () => {
+      carrito = {}
+
+      
+
+        const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+          confirmButton: 'btn btn-success',
+          cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+      })
+      
+      swalWithBootstrapButtons.fire({
+        title: 'Deseas realizar tu compra',
+        text: "Pulsa confirmar",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar',
+        cancelButtonText: 'Cancelar',
+        reverseButtons: true
+      }).then((result) => {
+        if (result.isConfirmed) {
+          swalWithBootstrapButtons.fire(
+            'Confirmada',
+            'Recibirás pronto tu compra.',
+            'success'
+          )
+         pintarCarrito (); 
+        } else if (
+         
+          result.dismiss === Swal.DismissReason.cancel
+        ) {
+          swalWithBootstrapButtons.fire(
+            'Cancelada',
+            'Tu compra ha sido cancelada, puedes seguir comprando',
+            'error'
+          )
+        }
+      })
+        
+    })
   }
   
   const accionBotones = () => {
@@ -143,23 +199,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 delete carrito[btn.dataset.id]
             } else {
                 carrito[btn.dataset.id] = { ...producto }
-            }
+            } 
             pintarCarrito()
         })
     })
   }
 
-const addToCart = document.querySelectorAll('.btn');
 
-for (let btn of addToCart) {
- btn.addEventListener("click", () => {
-  Swal.fire({
-   position: 'center',
-   icon: 'success',
-   title: 'Se ha agregado al carrito',
-   showConfirmButton: false,
-   timer: 1500
-  })
- })
-}
+
+
+
+
+
 
