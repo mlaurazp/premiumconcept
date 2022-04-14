@@ -294,3 +294,7 @@ html {
 
 .bodyPC {
   background-color: #114c58; }
+.messageAlertPC{
+  font-size: 2rem;
+  text-decoration: #93babf;
+}
