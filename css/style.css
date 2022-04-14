@@ -1,144 +1,45 @@
-.centralIndex1PC, .centralIndex2PC, .centralIndex3PC, .centralIndex4PC {
-  width: 50rem;
+.centralIndex {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  margin: auto; }
+  align-items: center; }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 280px) and (max-width: 480px) {
   .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
+    width: 50%; }
+  .containerMainPC {
+    width: 100%; }
+  .centralIndex {
+    display: flex;
+    flex-wrap: wrap; }
+  .h1PC {
+    font-size: 1.8rem !important; }
+  .h2PC {
+    font-size: 2rem !important; }
+  .menuListPC {
+    font-size: 1.5rem !important; }
   .listaNavPC {
     flex-direction: column; }
-  .imageCarrouselPC {
-    width: 65rem; }
-  .h1PC {
-    font-size: 2rem; }
-  .ImageMenuPC {
-    width: 30rem; }
-  .paragraphPC {
-    width: 30rem; }
-  .boxcentralIndex1PC {
-    width: 20rem; }
-  .containerMainPC {
-    width: 30rem; }
-  .paragraphMainPC {
-    width: 30rem; }
-  .footerPC {
-    width: 20rem; }
-  .imageFooterPC {
-    width: 20rem; }
-  .imageMenuPC {
-    width: 30rem; } }
-
-@media only screen and (min-width: 280px) and (max-width: 359px) {
-  .mapPC {
-    width: 250px;
-    height: 350px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-  .mapPC {
-    width: 290px;
-    height: 380px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 360px) and (max-width: 374px) {
-  .mapPC {
-    width: 330px;
-    height: 380px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 375px) and (max-width: 410px) {
-  .mapPC {
-    width: 345px;
-    height: 400px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 411px) and (max-width: 424px) {
-  .mapPC {
-    width: 385px;
-    height: 400px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 425px) and (max-width: 539px) {
-  .mapPC {
-    width: 385px;
-    height: 380px; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
-
-@media only screen and (min-width: 481px) and (max-width: 978px) {
+    .listaNavPC li a {
+      font-size: 1.8rem !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      letter-spacing: 10% !important; }
   .boxReservePC {
     display: none; }
-  .logoPrincipalPC {
-    margin-left: auto;
-    width: 10rem; }
-  .aNavPC {
-    font-size: 5px; }
-  .navHeaderPC {
-    background-color: #114c58;
-    justify-content: center; }
-  .listaNavPC {
-    flex-direction: column; } }
+  .imageNuestroespacioPC {
+    width: 40rem !important;
+    margin: auto; }
+  .mainBoxNuestroEspacioPC {
+    justify-items: center; }
+  .blockFooterImageReservePC {
+    display: none; }
+  .imageLocation {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .imageNuestroespacioPC {
+    padding: 6rem !important; } }
 
 .datosMapascontactoPC {
   margin-top: 5%;
@@ -166,20 +67,17 @@
     margin-top: 2%;
     margin-left: 1%; }
 
+.buttonPC {
+  text-decoration-color: #f9f9f3 !important;
+  margin: 3rem !important; }
+
 .bg-PC {
   background-color: #022c33; }
-
-.logoMiniPC {
-  width: 4rem; }
-
-.buttonPC {
-  color: #93babf !important; }
 
 .aNavPC {
   color: #93babf !important; }
 
 .navHeaderPC {
-  margin-top: 2rem;
   background-color: #022c33;
   width: 100%;
   display: flex;
@@ -213,11 +111,11 @@
   background-color: #114c58;
   text-decoration-color: #f9f9f3; }
 
-.centralIndex1PC, .centralIndex2PC, .centralIndex3PC, .centralIndex4PC {
-  width: 50rem;
+.centralIndex {
+  width: 60%;
   display: flex;
   flex-direction: column;
-  margin: auto; }
+  align-items: center; }
 
 .containerMainPc {
   display: flex;
@@ -228,33 +126,13 @@
   margin: auto 0;
   transition: ease;
   transition: all 1.5s;
-  width: 100%; }
+  width: 80%; }
 
 .imageCarrouselPC {
   width: 100%; }
 
 .imageMenuPC {
-  width: 100%; }
-
-.boxImgCentralIndex1PC {
-  margin-top: 3rem;
-  width: 50rem; }
-
-.boxParagraphCentralIndex1PC {
-  margin-top: 2rem; }
-
-.boxImgCentralIndex2PC {
-  width: 50rem; }
-
-.boxImgCentralIndex3PC {
-  margin-top: 3rem;
-  width: 50rem; }
-
-.boxParagraphCentralIndex3PC {
-  margin-top: 2.5rem; }
-
-.boxImgCentralIndex4PC {
-  width: 50rem; }
+  width: 80%; }
 
 .phportadaPC {
   width: 100%;
@@ -273,16 +151,12 @@
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5%;
-  text-align: justify;
+  text-align: justify !important;
   font-size: 2rem;
   font-family: "Palanquin", sans-serif;
   background-color: #114c58;
   color: #f9f9f3;
-  width: 100%; }
-
-.imageMenuPC {
-  width: 100%;
-  margin-left: 5%; }
+  width: 80%; }
 
 .imageFooterPC {
   width: 60rem;
@@ -293,41 +167,20 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 10%;
-  transition: all 1.5s; }
-
-.blockFooterMapReservePC {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto 0;
-  width: 100%; }
-
-.mapPC {
-  box-align: left;
-  width: 60rem;
-  margin-top: 2rem;
-  margin-left: 7rem; }
+  transition: all 1.5s;
+  margin-bottom: 2rem; }
 
 .boxReservePC {
-  box-align: left;
+  justify-content: center;
   width: 60rem;
-  margin-top: 2rem;
-  margin-left: 5rem; }
+  margin: auto; }
   .boxReservePC img {
     width: 53rem;
     height: 50rem; }
 
-.datosMapsPC {
-  font-family: "Palanquin", sans-serif;
-  font-size: 20px;
-  list-style: none;
-  text-align: left;
-  color: #f9f9f3;
-  margin-left: 8rem; }
-
 .footerPC {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap !important; }
 
 .h1PC {
   font-family: "Taviraj", serif;
@@ -384,22 +237,12 @@
 
 .logoMiniPC {
   margin: auto 0;
-  width: 20rem;
+  width: 10rem !important;
   padding: 2rem; }
 
 .imageNuestroespacioPC {
-  width: 50rem; }
-
-.nuestroEspacioPC {
-  margin: 10%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
-
-.imageNuestroespacioPC {
-  padding: 2rem; }
+  width: 60rem;
+  padding: 3rem; }
 
 .mainProductosPC {
   font-family: 'Palanquin', sans-serif;
@@ -451,3 +294,7 @@ html {
 
 .bodyPC {
   background-color: #114c58; }
+.messageAlertPC{
+  font-size: 2rem;
+  text-decoration: #93babf;
+}

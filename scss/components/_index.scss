@@ -10,46 +10,19 @@
     margin: auto 0;
     transition: ease;
     transition: all 1.5s;
-    width: 100%;
+    width: 80%;
 }
 .imageCarrouselPC{
     width: 100%;
 }
 .imageMenuPC{
-   width:100%
+   width:80%;
 }
-.centralIndex1PC{
+
+.centralIndex{
     @extend %cajaCentralIndex;
 }
-.boxImgCentralIndex1PC{
-    margin-top: 3rem;
-    width: 50rem;
-}
-.boxParagraphCentralIndex1PC{
-    margin-top: 2rem;
-}
-.centralIndex2PC{
-    @extend %cajaCentralIndex;
-}
-.boxImgCentralIndex2PC{
-    width: 50rem;
-}
-.centralIndex3PC{
-    @extend %cajaCentralIndex;
-}
-.boxImgCentralIndex3PC{
-    margin-top: 3rem;
-    width: 50rem;
-}
-.boxParagraphCentralIndex3PC{
-    margin-top: 2.5rem;
-}
-.centralIndex4PC{
-    @extend %cajaCentralIndex;
-}
-.boxImgCentralIndex4PC{
-    width: 50rem;
-}
+
 .phportadaPC{
     width: 100%;
     margin: 0 auto;
@@ -67,17 +40,14 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
-    text-align: justify;
+    text-align: justify !important;
     font-size: 2rem;
     font-family: $secondary-font;
     background-color: $dark-color;
     color: $lightest-color;
-    width: 100%;
+    width: 80%;
 }
-.imageMenuPC{
-    width: 100%;
-    margin-left: 5%;
-}
+
 .imageFooterPC{
     width: 60rem;
     display: inline-block;
@@ -88,41 +58,26 @@
     justify-content: center;
     margin-top: 10%;
     transition: all 1.5s;
+    margin-bottom: 2rem;
 }
-.blockFooterMapReservePC{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto 0;
-    width: 100%;
-}
-.mapPC {
-    box-align: left;
-    width: 60rem;
-    margin-top: 2rem;
-    margin-left: 7rem;
-}
+
+
 .boxReservePC{
-    box-align: left;
+    justify-content: center;
     width: 60rem;
-    margin-top: 2rem;
-    margin-left: 5rem;
+    margin: auto;
     img{
         width: 53rem;
         height: 50rem;
     }
 }
 
-.datosMapsPC{
-    font-family: $secondary-font;
-    font-size: 20px;
-    list-style: none;      
-    text-align: left;
-    color: $lightest-color;
-    margin-left: 8rem;
-}
 .footerPC{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: wrap !important;
 }
+
+
+
+
 

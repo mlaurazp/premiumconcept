@@ -3,17 +3,11 @@
 .bg-PC{
     background-color: $darkest-color;
 }
-.logoMiniPC{
-    width: 4rem;
-}
-.buttonPC{
-    color: $light-color !important;
-}
+
 .aNavPC {
     color: $light-color!important;
 }
 .navHeaderPC{
-    margin-top: 2rem;
     background-color: $darkest-color;
     width: 100%;
     display: flex;
@@ -51,3 +45,4 @@
     background-color: $dark-color;
     text-decoration-color: $lightest-color;
 }
+

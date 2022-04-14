@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!--IOS-->
+   <meta name="x-apple-disable-message-reformatting" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="x-apple-disable-message-reformatting" />   
+   <!--Open Graph-->
+   <meta property="og:tipe" content="website">
+   <meta property="og:title" content="Clase 13 SEO Coderhouse">
+   <meta property="og:description" content="Premium Concept es un espacio gastronómico para compartir en familia y con amigos. Con una tienda de productos exclusivos para vos"> 
+   <meta property="og:image" content="multimedia/LogoPremiumCOnceptGrande.png">
+   <meta property="og:name" content="PremiumConcept"> 
+   <meta name="author" content="Laura Zambrano">
+   <!--Responsive-->    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Description-->
+      <meta name="description" content="Premium Concept es un espacio gastronómico para compartir en familia y con amigos. Aquí podrás enviarnos tus datos para poder realizar una reserva.">
     <!--SEO-->
     <meta name="keywords" content="concepto, premium, restaurant, caviar, vinos, menu, carta, bar, cava, bodega, encurtidos, conservas, jamon, pescado, compartir, restauracion, familia, amigos, mesa, sillas, estantes, manteles, servilletas, platos, copas, tablas, picadas, postres, seafood, vegan, vegetetarian, dessert, delivery, take away, restaurant nearby, best restaurant, terraza, spain restaurant, cocina, chef, kitchen, best kitchen, ecologico, ecology, reserva, verduras, venta de productos, gastronomía, mozos, atención, excelencia, calidad, dedicación, selectivo, único, reserva, date, fecha, horario, encuentro">
-     <!-- CSS -->
-     <link rel="stylesheet" href="../css/style.css">
-     <!--Google Fonts-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Google Fonts-->
     <!--font-family: 'Taviraj', serif;-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
@@ -25,11 +39,10 @@
 
 <body class="bodyPC">
     <header>
-        <img src="../multimedia/LOGO VERDE.png" alt="logo_premium_concept">
+        <img src="../multimedia/LogoVerde.webp" alt="Imagen del logo principal de Premium Concept">
         <!--Zona navegable-->
         <nav class="navHeaderPC navbar navbar-expand-lg navbar-light bg-PC">
             <div class="container-fluid">
-                <img class="logoMiniPC d-none" src="../multimedia/LOGOPREMIUMCONCEPTMINI.png" alt="logo_premium_concept_mini">
               <button class="spanNavPC navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -50,17 +63,31 @@
         <section>
             <h1 class="h1PC d-none">Reservas</h1>
         </section>
-
-        <section class="formRegistrerPC">
+       
+        <div id="contFormulario">
             <h2 class="h2PC">Formulario de Reserva</h2>
-            <input class="controlsPC" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre"> 
-            <input class="controlsPC" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido"> 
-            <input class="controlsPC" type="text" name="telefono" id="telefono" placeholder="Ingrese su telefono"> 
-            <input class="controlsPC" type="text" name="mail" id="mail" placeholder="Ingrese su mail"> 
-            <input class="controlsPC" type="text" name="reserva" id="reserva" placeholder="Ingrese fecha y hora reserva"> 
-            <input class="controlsPC" type="text" name="cantidad" id="cantidad" placeholder="Ingrese cantidad de comensales"> 
-            <button type="aceptar" class="btn-colorPC btn btn-primary">Aceptar</button> 
-        </section>
+      
+            <form id="formulario" class="formRegistrerPC">
+                <input class="controlsPC" type="text" name="userNnombre" id="userNombre" placeholder="Ingrese su nombre" required> 
+                <p class="text-danger mb-2 d-none" id="alertNombre"></p>
+                <input class="controlsPC" type="text" name="userApellido" id="userApellido" placeholder="Ingrese su apellido" required> 
+                <p class="text-danger mb-2 d-none" id="alertApellido"></p>
+                <input class="controlsPC" type="text" name="userTelefono" id="userTelefono" placeholder="Ingrese su telefono" required> 
+                <p class="text-danger mb-2 d-none" id="alertTelefono"></p>
+                <input class="controlsPC" type="email" name="userMail" id="userMail" placeholder="Ingrese su mail" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required> 
+                <p class="text-danger mb-2 d-none" id="alertMail"></p>
+                <input class="controlsPC" type="date" name="userReserva" id="userReserva" placeholder="Ingrese fecha y hora reserva" required>
+                <p class="text-danger mb-2 d-none" id="alertReserva"></p> 
+                <input class="controlsPC" type="number" name="userCantidad" id="userCantidad" placeholder="Ingrese cantidad de comensales" required> 
+                <p class="text-danger mb-2 d-none" id="alertCantidad"></p>
+                <button type="submit" class="btn-colorPC btn btn-primary">Enviar</button> 
+            </form> 
+           
+            <div class="alert alert-succes my-2 d-none text-center text-light messageAlertPC" id="alertSucces">
+                Mensaje enviado correctamente
+            </div>
+        </div>
+
         <section>
             <ul class="datosMapascontactoPC">
                 <li>Dirección: Calle Larios 150</li>
@@ -77,13 +104,14 @@
         <!--Zona navegable-->
         <nav>
             <ul class="redesPC">
-             <li><a href="https://www.instagram.com/premiumconceptspain/"><img src="../multimedia/iconig.png" alt="" width="40" height="40"></a></li>
-             <li><a href="https://www.facebook.com/profile.php?id=100072336820173"><img src="../multimedia/iconfacebook.png" alt="" width="40" height="40"></a></li>
+             <li><a href="https://www.instagram.com/premiumconceptspain/"><img src="../multimedia/iconig.webp" alt="Imagen del ícono de Instagram" width="40" height="40"></a></li>
+             <li><a href="https://www.facebook.com/profile.php?id=100072336820173"><img src="../multimedia/iconfacebook.webp" alt="Imagen del ícono de Facebook" width="40" height="40"></a></li>
             </ul> 
         </nav>
     </footer>  
     <!-- Fin Pie de Página-->
-    
+      <!--JS-->
+      <script src="../js/reservas.js"></script>
     <!--Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
