@@ -37,6 +37,7 @@ const mostrarMensajeError = (errores) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
+<<<<<<< HEAD
     let nuevaReserva = {
         fullname: formulario.children[0].value + ' ' + formulario.children[2].value,
         phone: formulario.children[4].value,
@@ -46,6 +47,14 @@ formulario.addEventListener('submit', (e) => {
     }
     localStorage.setItem('reserva', JSON.stringify(nuevaReserva));
  
+=======
+    localStorage.setItem('userNombre', formulario.children[0].value);
+    localStorage.setItem('userApellido', formulario.children[2].value);
+    localStorage.setItem('userTelefono', formulario.children[4].value);
+    localStorage.setItem('userMail', formulario.children[6].value);
+    localStorage.setItem('userReserva', formulario.children[8].value);
+    localStorage.setItem('userCantidad', formulario.children[10].value);
+>>>>>>> 5cc9637df89a704c745de94491bcd4a70bedb6b7
 
     alertSucces.classList.add('d-none');
 

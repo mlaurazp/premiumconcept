@@ -132,6 +132,11 @@ document.addEventListener("DOMContentLoaded", () => {
   finalizarCompra.addEventListener('click', () => {
       carrito = {}
 
+<<<<<<< HEAD
+=======
+      
+
+>>>>>>> 5cc9637df89a704c745de94491bcd4a70bedb6b7
         const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
           confirmButton: 'btn btn-success',
